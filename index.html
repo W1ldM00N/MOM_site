@@ -8,8 +8,8 @@
 
     <meta name="description" content="Жанель Мукашева — Бизнес. Системы. Люди.">
 
-    <link preconnect href="https://fonts.googleapis.com">
-    <link preconnect href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link 
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" 
@@ -39,59 +39,55 @@
                 <a href="#contact">Контакты</a>
             </nav>
 
-            <a href="#contacts" class="button button--dark header__button">Связаться</a>
+            <a href="#contact" class="button button--dark header__button">Связаться</a>
         </div>
     </header>
 
     <main>
         <section class="hero">
             <div class="container hero__grid">
-                <div class="hero__content reveal">
-                    <p class="eyebrow">Предприниматель · Бизнес-тренер</p>
-                    <h1>Больше,<br />чем бизнес</h1>
-                    <p class="hero__text">
+                <div class="hero__content">
+                    <p class="eyebrow reveal delay-1">Предприниматель · Бизнес-тренер</p>
+                    <h1 class="reveal delay-2">Больше,<br />чем бизнес</h1>
+                    <p class="hero__text reveal delay-3">
                         Помогаю собственникам создавать системный бизнес,
                         который растёт, приносит доход и даёт свободу.
                     </p>
-                    <div class="hero__actions">
-                        <a href="#contacts" class="button button--dark">Записаться на консультацию →</a>
+                    <div class="hero__actions reveal delay-4">
+                        <a href="#contact" class="button button--dark">Записаться на консультацию →</a>
                         <a href="#services" class="button button--outline">Узнать о программах ↓</a>
                     </div>
                 </div>
-
-                <!-- <div class="hero__image">
-                    <img src="assets/images/hero.jpeg" alt="Жанель Мукашева">
-                </div> -->
             </div>
         </section>
 
         <section class="about section" id="about">
             <div class="container about__grid">
-                <div class="about__content reveal">
-                    <p class="eyebrow">Обо мне</p>
-                    <h2>Мукашева Жанель</h2>
-                    <p class="lead">
+                <div class="about__content">
+                    <p class="eyebrow reveal">Обо мне</p>
+                    <h2 class="reveal delay-1">Мукашева Жанель</h2>
+                    <p class="lead reveal delay-2">
                         Предприниматель и бизнес-тренер по систематизации бизнеса.
                     </p>
-                    <p>
-                        Более 18 лет в бизнесе. Прошла путь от небольших<br />
-                        проектов до группы компаний в строительном<br />
-                        и аграрном секторе со штатом более 100 человек.<br />
-                        На собственном опыте знаю, как из хаоса выстроить<br />
-                        управляемую систему. Сегодня я помогаю другим<br />
-                        предпринемателям проходить этот путь быстрее,<br />
+                    <p class="reveal delay-3">
+                        Более 18 лет в бизнесе. Прошла путь от небольших
+                        проектов до группы компаний в строительном
+                        и аграрном секторе со штатом более 100 человек.
+                        На собственном опыте знаю, как из хаоса выстроить
+                        управляемую систему. Сегодня я помогаю другим
+                        предпринимателям проходить этот путь быстрее,
                         избегая типичных ошибок.
                     </p>
                 </div>
 
                 <img
-                    class="about__image"
+                    class="about__image reveal reveal-right delay-1"
                     src="assets/images/about.jpeg"
                     alt="Портрет специалиста"
                     loading="lazy"
                 />
 
-                <div class="stats reveal">
+                <div class="stats reveal reveal-left delay-2">
                     <article class="stat">
                         <strong>18+</strong>
                         <span>лет в бизнесе</span>
@@ -116,19 +112,19 @@
                 <h2>Сильные <br />предприниматели —<br />сильнее общество</h2>
                 <br />
                 <p>
-                    Я верю, что системный бизнес ддет не только<br />
-                    финансовый результат, но и свободу - для семьи,<br />
+                    Я верю, что системный бизнес дает не только
+                    финансовый результат, но и свободу — для семьи,
                     развития, новых идей и большего вклада в мир.
                 </p>    
             </div>
         </section>
 
         <section class="services section" id="services">
-            <div class="container reveal">
-                <p class="eyebrow">Чем я могу быть полезна</p>
+            <div class="container">
+                <p class="eyebrow reveal">Чем я могу быть полезна</p>
                 
                 <div class="services__grid">
-                    <article class="service-card">
+                    <article class="service-card reveal delay-1">
                         <div class="service-card__icon">◌</div>
                         <h3>Бизнес-тренинги</h3>
                         <p>
@@ -137,7 +133,7 @@
                         </p>
                     </article>
 
-                    <article class="service-card">
+                    <article class="service-card reveal delay-2">
                         <div class="service-card__icon">▣</div>
                         <h3>Консультации</h3>
                         <p>
@@ -146,7 +142,7 @@
                         </p>
                     </article>
 
-                    <article class="service-card">
+                    <article class="service-card reveal delay-3">
                         <div class="service-card__icon">▤</div>
                         <h3>Методология</h3>
                         <p>
@@ -155,7 +151,7 @@
                         </p>
                     </article>
 
-                    <article class="service-card">
+                    <article class="service-card reveal delay-4">
                         <div class="service-card__icon">↗</div>
                         <h3>Стратегический взгляд</h3>
                         <p>
@@ -179,12 +175,6 @@
                     <li>Для тех, кто ценит время, людей и свободу</li>
                 </ul>
                 </div>
-
-                <!-- <img
-                src="assets/images/audience.jpeg"
-                alt="Специалист за работой"
-                loading="lazy"
-                /> -->
             </div>
         </section>
 
@@ -194,7 +184,7 @@
                 <p class="eyebrow">Давайте обсудим ваш запрос</p>
                 <h2>Готовы к новым результатам?</h2>
                 <p>
-                    Оставьте заявку, и мы обсудим, какая программа<br />
+                    Оставьте заявку, и мы обсудим, какая программа
                     или формат работы подойдут именно вам.   
                 </p>
                 </div>
@@ -235,3 +225,4 @@
 
     <script src="js/script.js"></script>
 </body>
+</html>
