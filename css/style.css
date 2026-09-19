@@ -599,9 +599,17 @@ h2 {
   }
 
   .hero__content {
+    position: relative;
     min-height: 560px;
     justify-content: flex-end;
-    padding: 80px 0 42px;
+    padding: 150px 0 42px;
+  }
+
+  .hero__content .eyebrow {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    margin: 0;
   }
 
   .hero__image {
@@ -713,15 +721,28 @@ h2 {
   }
 
   .audience {
+    min-height: 0;
     height: auto;
-    min-height: 600px;
-    padding: 62px 0;
-    background-position: 65% center;
+    padding: 64px 0 72px;
+    background-image:
+      linear-gradient(
+        90deg,
+        rgba(242, 237, 231, 0.92) 0%,
+        rgba(242, 237, 231, 0.82) 100%
+      ),
+      url("../assets/images/audience_bg.jpg");
+
+    background-size: cover;
+    background-position: 72% center;
+    background-repeat: no-repeat;
   }
 
   .audience__grid {
-    grid-template-columns: 1fr;
-    gap: 0;
+    display: block;
+  }
+
+  .audience .eyebrow {
+    margin-bottom: 38px;
   }
 
   .audience__grid img {
@@ -729,18 +750,23 @@ h2 {
   }
 
   .check-list {
-    gap: 14px;
+    gap: 22px;
+    margin: 0;
+    max-width: 560px;
   }
 
   .check-list li {
-    font-size: 16px;
+    gap: 16px;
+    font-size: clamp(16px, 4.8vw, 20px);
+    line-height: 1.45;
   }
 
   .check-list li::before {
-    width: 25px;
-    height: 25px;
-    flex-basis: 25px;
-    font-size: 14px;
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
+    border-color: rgba(29, 27, 26, 0.65);
+    font-size: 21px;
   }
 
   .contact {
