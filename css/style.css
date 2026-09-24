@@ -135,24 +135,26 @@ a {
 }
 
 .hero {
-  min-height: 690px;
+  min-height: 900px;
   overflow: hidden;
-  background-image: url("../assets/images/hero-bg.jpg");
-  background-position: center center;
-  background-size: cover;
+  background-color: var(--bg);
+  background-image: url("../assets/images/hero.jpeg");
+  background-position: 92% 58%;
+  background-size: auto 112%;
   background-repeat: no-repeat;
 }
 .hero__grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  min-height: 690px;
+  grid-template-columns: 1fr;
+  min-height: 900px;
 }
 
 .hero__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 62px 40px 90px 0;
+  width: min(100%, 760px);
+  padding: 80px 0 70px;
 }
 
 .hero__image {
@@ -394,24 +396,82 @@ h2 {
 }
 
 .audience {
-    height: 450px;
-    padding: 62px 0;
-    background:
-        url("../assets/images/audience_bg.jpg") center / cover;
+    position: relative;
+    isolation: isolate;
+    height: auto;
+    min-height: 620px;
+    padding: 80px 0;
+    overflow: hidden;
+    background: #eeebe7;
 }
+
+.audience::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+
+    background-image: url("../assets/images/audience.jpg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: auto 100%;
+
+    /* Плавный переход от фона слева к фотографии справа */
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 35%,
+      #000 68%
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent 35%,
+      #000 68%
+    );
+  }
+
+.audience > .container {
+    position: relative;
+    z-index: 1;
+  }
 
 .audience__grid {
-  display: grid;
-  grid-template-columns: 1fr 0.8fr;
-  align-items: end;
-  gap: 70px;
-}
+    display: block;
+    position: relative;
+  }
 
-.audience__grid img {
-  min-height: 420px;
-  object-fit: cover;
-  object-position: top;
-}
+.audience__note {
+    position: absolute;
+    left: 10%;
+    top: 300px;
+    width: max-content;
+    max-width: 360px;
+
+    color: #77716c;
+    font-family: "Great Vibes", cursive;
+    font-size: clamp(64px, 4.8vw, 105px);
+    line-height: 1.05;
+    color: #6a645e;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+
+    transform: rotate(-8deg);
+    pointer-events: none;
+  }
+
+.audience__note span {
+    display: block;
+  }
+
+  .audience__note span + span {
+    margin-left: 8px;
+    margin-top: -1px;
+  }
+
+
+.audience__grid > div {
+    max-width: 900px;
+  }
 
 .check-list {
   display: grid;
